@@ -15,7 +15,7 @@ $.getJSON("https://raw.githubusercontent.com/orhuna/WebGIS_SLU_M1/main/Module%20
   // add GeoJSON layer to the map once the file is loaded
   L.geoJson(data,{
       pointToLayer: function(feature,latlng){
-	    return L.marker(latlng,{icon: crimeIcon});
+      return L.marker(latlng,{icon: crimeIcon});
       }
     }).addTo(map);
 });
