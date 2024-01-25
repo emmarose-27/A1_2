@@ -10,7 +10,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 $.getJSON("https://raw.githubusercontent.com/orhuna/WebGIS_SLU_M1/main/Module%201/Assignment%201/data/sf_crime.geojson",function(data){
   var crimeIcon = L.icon({
       iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8V6tCzEs7nLWREM6LKSKqx0zCEkHH5nfJ2g&usqp=CAU',
-      iconSize: [50,40]
+      iconSize: [30,20]
     });
   // add GeoJSON layer to the map once the file is loaded
   L.geoJson(data,{
